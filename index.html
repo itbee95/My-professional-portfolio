@@ -1,0 +1,1294 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101b35">
+<meta name="description" content="Official professional portfolio of Itunu Blessing Egbowon — Sales Development, Customer Experience, Customer Support and Business Development.">
+<title>Itunu Blessing Egbowon | Professional Portfolio</title>
+
+<style>
+:root {
+ --navy:#101b35;
+ --teal:#087e83;
+ --coral:#e87965;
+ --gold:#d7a83e;
+ --violet:#7156a5;
+ --white:#ffffff;
+ --light:#f5f7fb;
+ --dark:#20283a;
+ --muted:#69748a;
+}
+
+* {
+ box-sizing:border-box;
+ margin:0;
+ padding:0;
+}
+
+html {
+ scroll-behavior:smooth;
+ scroll-padding-top:85px;
+}
+
+body {
+ font-family:Arial,Helvetica,sans-serif;
+ background:var(--light);
+ color:var(--dark);
+ line-height:1.7;
+ overflow-x:hidden;
+}
+
+a {text-decoration:none;color:inherit}
+
+.container {
+ width:90%;
+ max-width:1150px;
+ margin:auto;
+}
+
+/* NAVIGATION */
+
+header {
+ background:white;
+ position:sticky;
+ top:0;
+ z-index:1000;
+ box-shadow:0 3px 20px #101b3510;
+}
+
+.nav {
+ min-height:75px;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ gap:20px;
+}
+
+.logo {
+ font-size:22px;
+ font-weight:900;
+ color:var(--navy);
+ letter-spacing:-1px;
+}
+
+.logo span {color:var(--teal)}
+
+nav {
+ display:flex;
+ flex-wrap:wrap;
+ gap:20px;
+}
+
+nav a {
+ font-size:14px;
+ font-weight:bold;
+ color:var(--navy);
+ transition:.3s;
+}
+
+nav a:hover {color:var(--coral)}
+
+/* HERO */
+
+.hero {
+ background:
+ radial-gradient(circle at 90% 10%,#087e8345,transparent 30%),
+ linear-gradient(125deg,var(--navy),#263e64);
+ color:white;
+ padding:85px 0;
+}
+
+.hero-grid {
+ display:grid;
+ grid-template-columns:1.2fr .8fr;
+ align-items:center;
+ gap:55px;
+}
+
+.eyebrow {
+ color:#8ce0dc;
+ letter-spacing:3px;
+ font-size:12px;
+ font-weight:bold;
+ text-transform:uppercase;
+}
+
+.hero h1 {
+ font-size:clamp(36px,6vw,65px);
+ line-height:1.12;
+ margin:20px 0;
+ letter-spacing:-2px;
+}
+
+.hero h1 span {color:var(--gold)}
+
+.hero p {
+ color:#e0e8f4;
+ font-size:17px;
+ max-width:650px;
+}
+
+.buttons {
+ display:flex;
+ flex-wrap:wrap;
+ gap:12px;
+ margin-top:30px;
+}
+
+.btn {
+ display:inline-block;
+ border:0;
+ padding:13px 20px;
+ border-radius:30px;
+ font-weight:bold;
+ cursor:pointer;
+ font-size:14px;
+ transition:.4s;
+}
+
+.btn:hover {
+ transform:translateY(-4px);
+ box-shadow:0 10px 25px #0003;
+}
+
+.btn-gold {
+ background:var(--gold);
+ color:var(--navy);
+}
+
+.btn-outline {
+ background:transparent;
+ color:white;
+ border:1px solid white;
+}
+
+.btn-teal {
+ background:var(--teal);
+ color:white;
+}
+
+/* PROFESSIONAL PHOTOGRAPH */
+
+.photo-area {
+ width:100%;
+ max-width:350px;
+ margin:auto;
+ position:relative;
+}
+
+.photo-frame {
+ width:100%;
+ aspect-ratio:4/5;
+ padding:8px;
+ background:white;
+ border-radius:25px;
+ box-shadow:15px 15px 0 var(--gold);
+ overflow:hidden;
+}
+
+.profile-photo {
+ display:block;
+ width:100%;
+ height:100%;
+ object-fit:cover;
+ object-position:center 25%;
+ border-radius:18px;
+ background:#fff;
+}
+
+.photo-caption {
+ background:white;
+ color:var(--navy);
+ position:absolute;
+ bottom:20px;
+ left:-20px;
+ padding:13px 18px;
+ border-radius:12px;
+ font-size:13px;
+ font-weight:bold;
+ box-shadow:0 8px 25px #0002;
+}
+
+/* GENERAL SECTIONS */
+
+section {padding:80px 0}
+
+.section-title {
+ text-align:center;
+ max-width:750px;
+ margin:0 auto 40px;
+}
+
+.section-title small {
+ color:var(--teal);
+ font-weight:bold;
+ letter-spacing:3px;
+ text-transform:uppercase;
+}
+
+.section-title h2 {
+ color:var(--navy);
+ font-size:clamp(27px,4vw,40px);
+ margin:10px 0;
+}
+
+.section-title p {color:var(--muted)}
+
+.about-grid {
+ display:grid;
+ grid-template-columns:1.2fr .8fr;
+ gap:25px;
+}
+
+.card {
+ background:white;
+ padding:27px;
+ border-radius:18px;
+ border:1px solid #e5e9f0;
+ box-shadow:0 12px 35px #101b3509;
+}
+
+.card h3 {
+ color:var(--navy);
+ margin-bottom:12px;
+}
+
+.card p {color:var(--muted)}
+
+.stats {
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:13px;
+}
+
+.stat {
+ background:#e8f5f4;
+ padding:20px;
+ border-radius:15px;
+}
+
+.stat strong {
+ display:block;
+ font-size:29px;
+ color:var(--teal);
+}
+
+.stat span {
+ font-size:12px;
+ color:var(--muted);
+}
+
+/* SKILLS */
+
+#skills {background:white}
+
+.skills {
+ display:flex;
+ flex-wrap:wrap;
+ justify-content:center;
+ gap:12px;
+}
+
+.skill {
+ padding:10px 15px;
+ background:#e8f5f4;
+ border:1px solid #d5e9e7;
+ border-radius:30px;
+ color:#08696d;
+ font-size:13px;
+ font-weight:bold;
+ transition:.3s;
+}
+
+.skill:hover {
+ background:var(--navy);
+ color:white;
+ transform:translateY(-4px);
+}
+
+/* EXPERIENCE */
+
+.timeline {
+ display:grid;
+ gap:20px;
+}
+
+.job {
+ background:white;
+ padding:27px;
+ border-radius:18px;
+ border-left:5px solid var(--teal);
+ box-shadow:0 10px 30px #101b3509;
+}
+
+.job:nth-child(2) {border-color:var(--coral)}
+.job:nth-child(3) {border-color:var(--gold)}
+.job:nth-child(4) {border-color:var(--violet)}
+
+.job h3 {color:var(--navy)}
+
+.job .company {
+ color:var(--violet);
+ font-weight:bold;
+ margin:5px 0;
+}
+
+.job time {
+ color:var(--teal);
+ font-size:13px;
+ font-weight:bold;
+}
+
+.job ul {
+ padding-left:20px;
+ margin-top:12px;
+ color:var(--muted);
+}
+
+.job li {margin:7px 0}
+
+/* PROJECTS */
+
+#projects {background:white}
+
+.project-grid {
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:20px;
+}
+
+.project {
+ border-top:5px solid var(--teal);
+ transition:.4s;
+}
+
+.project:nth-child(2) {border-color:var(--coral)}
+.project:nth-child(3) {border-color:var(--violet)}
+
+.project:hover {transform:translateY(-7px)}
+
+.project small {
+ color:var(--teal);
+ font-weight:bold;
+ text-transform:uppercase;
+ letter-spacing:1px;
+}
+
+.project h3 {
+ margin:12px 0;
+ color:var(--navy);
+}
+
+.project p {
+ font-size:14px;
+ margin-bottom:12px;
+}
+
+/* EDUCATION */
+
+.education-grid {
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:20px;
+}
+
+/* CONTACT */
+
+.contact-box {
+ background:linear-gradient(120deg,var(--navy),#263e64);
+ color:white;
+ padding:45px;
+ border-radius:25px;
+ text-align:center;
+}
+
+.contact-box h2 {
+ font-size:clamp(27px,4vw,40px);
+ margin-bottom:15px;
+}
+
+.contact-box p {
+ color:#dce5f1;
+ margin-bottom:22px;
+}
+
+.contact-links {
+ display:flex;
+ justify-content:center;
+ flex-wrap:wrap;
+ gap:12px;
+}
+
+/* FOOTER */
+
+footer {
+ background:var(--navy);
+ color:white;
+ padding:30px 0;
+ text-align:center;
+ font-size:13px;
+}
+
+/* AUTOMATED PORTFOLIO ASSISTANT */
+
+.assistant {
+ position:fixed;
+ bottom:20px;
+ right:20px;
+ z-index:2000;
+}
+
+.chat-button {
+ background:var(--teal);
+ color:white;
+ border:none;
+ border-radius:30px;
+ padding:15px 20px;
+ font-weight:bold;
+ cursor:pointer;
+ box-shadow:0 8px 25px #087e8355;
+}
+
+.chat-box {
+ display:none;
+ position:absolute;
+ bottom:65px;
+ right:0;
+ width:min(350px,90vw);
+ background:white;
+ border-radius:18px;
+ box-shadow:0 15px 50px #0003;
+ overflow:hidden;
+}
+
+.chat-box.open {display:block}
+
+.chat-header {
+ background:var(--navy);
+ color:white;
+ padding:17px;
+ font-weight:bold;
+}
+
+.chat-content {padding:17px}
+
+.chat-reply {
+ background:#e8f5f4;
+ padding:13px;
+ border-radius:12px;
+ margin-bottom:13px;
+ font-size:13px;
+}
+
+.chat-options {
+ display:grid;
+ gap:8px;
+}
+
+.chat-options button {
+ padding:11px;
+ border:1px solid #e1e6ee;
+ border-radius:10px;
+ background:white;
+ text-align:left;
+ cursor:pointer;
+ font-weight:bold;
+ color:var(--navy);
+}
+
+.chat-options button:hover {
+ background:var(--teal);
+ color:white;
+}
+
+/* BACK TO HOME */
+
+.back-home {
+ position:fixed;
+ bottom:22px;
+ left:18px;
+ z-index:1500;
+ background:var(--gold);
+ color:var(--navy);
+ padding:11px 17px;
+ border-radius:30px;
+ font-size:13px;
+ font-weight:bold;
+ box-shadow:0 5px 20px #0002;
+}
+
+/* SLOW MOTION ANIMATION */
+
+.reveal {
+ opacity:0;
+ transform:translateY(30px);
+ transition:opacity 1.1s ease,transform 1.1s ease;
+}
+
+.reveal.visible {
+ opacity:1;
+ transform:translateY(0);
+}
+
+.float {
+ animation:slowFloat 7s ease-in-out infinite;
+}
+
+@keyframes slowFloat {
+ 0%,100% {transform:translateY(0)}
+ 50% {transform:translateY(-12px)}
+}
+
+@media(prefers-reduced-motion:reduce) {
+ *,*::before,*::after {
+  animation:none!important;
+  transition:none!important;
+ }
+ .reveal {opacity:1;transform:none}
+}
+
+/* PRINTABLE CV AND COVER LETTER */
+
+.print-document {display:none}
+
+@media print {
+ @page {size:A4;margin:15mm}
+
+ body.print-cv>*:not(#printCV),
+ body.print-letter>*:not(#printLetter) {
+  display:none!important;
+ }
+
+ body.print-cv #printCV,
+ body.print-letter #printLetter {
+  display:block!important;
+  background:white;
+  color:#222;
+  font-family:Arial,sans-serif;
+  line-height:1.45;
+ }
+
+ .print-document h1 {
+  color:#101b35;
+  font-size:22pt;
+ }
+
+ .print-document h2 {
+  color:#087e83;
+  font-size:12pt;
+  margin-top:14px;
+  border-bottom:1px solid #d7a83e;
+ }
+
+ .print-document h3 {
+  color:#101b35;
+  font-size:10pt;
+  margin-top:9px;
+ }
+
+ .print-document p,
+ .print-document li {
+  font-size:9pt;
+  margin:4px 0;
+ }
+
+ .print-document ul {padding-left:18px}
+}
+
+/* MOBILE */
+
+@media(max-width:800px) {
+ .hero-grid,.about-grid {
+  grid-template-columns:1fr;
+ }
+
+ .photo-area {
+  max-width:290px;
+  margin-top:30px;
+ }
+
+ .project-grid,.education-grid {
+  grid-template-columns:1fr;
+ }
+
+ .stats {grid-template-columns:1fr 1fr}
+}
+
+@media(max-width:550px) {
+ .nav {
+  flex-direction:column;
+  padding:15px 0;
+ }
+
+ nav {justify-content:center;gap:13px}
+
+ .hero {padding:60px 0}
+
+ section {padding:60px 0}
+
+ .contact-box {padding:27px 18px}
+
+ .back-home {bottom:15px;left:10px}
+
+ .assistant {right:10px;bottom:15px}
+}
+</style>
+</head>
+
+<body id="home">
+
+<header>
+<div class="container nav">
+<a href="#home" class="logo">ITUNU <span>BLESSING</span></a>
+
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
+<a href="#projects">Projects</a>
+<a href="#education">Education</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
+</header>
+
+<main>
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+<div class="container hero-grid">
+
+<div class="reveal">
+<div class="eyebrow">
+Sales Development | Customer Experience | Business Development
+</div>
+
+<h1>
+Turning meaningful conversations into
+<span>lasting business results.</span>
+</h1>
+
+<p>
+I am Itunu Blessing Egbowon, a dedicated Sales Development and Customer Experience professional with practical experience in customer engagement, lead generation, sales operations, appointment setting, relationship management and business development.
+
+I believe every customer deserves to be heard, every opportunity deserves thoughtful attention, and every professional relationship deserves honesty, respect and commitment.
+</p>
+
+<div class="buttons">
+<a href="#contact" class="btn btn-gold">Let's Connect</a>
+
+<button class="btn btn-outline" onclick="printDocument('cv')">
+Download Professional CV PDF
+</button>
+
+<button class="btn btn-outline" onclick="printDocument('letter')">
+Download Cover Letter PDF
+</button>
+</div>
+</div>
+
+<div class="photo-area reveal float">
+<div class="photo-frame">
+<img
+src="profile.jpg"
+alt="Professional photograph of Itunu Blessing Egbowon"
+class="profile-photo"
+onerror="this.onerror=null;this.src='IMG-20261115-WA0014.jpg';"
+>
+</div>
+
+<div class="photo-caption">
+Professional. Customer-focused. Results-driven.
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+<div class="container">
+
+<div class="section-title reveal">
+<small>ABOUT ME</small>
+<h2>People First. Purpose in Every Interaction.</h2>
+<p>
+Building relationships, creating meaningful customer experiences and contributing to business growth.
+</p>
+</div>
+
+<div class="about-grid">
+
+<div class="card reveal">
+<h3>My Professional Story</h3>
+
+<p>
+My professional journey has been shaped by customer engagement, sales development, communication, relationship building and operational responsibilities.
+
+Over the years, I have worked with different organisations, engaging customers, identifying business opportunities, generating leads, managing customer enquiries, supporting sales teams and coordinating important business activities.
+
+I understand that behind every successful transaction is a person who needs to be understood, respected and supported.
+
+My approach combines professionalism, empathy, consistency, active listening and a genuine commitment to achieving business objectives.
+
+I am interested in opportunities where I can contribute my experience while continuing to grow professionally.
+</p>
+</div>
+
+<div class="stats reveal">
+
+<div class="stat">
+<strong>200+</strong>
+<span>Daily inbound and outbound calls handled in a previous role</span>
+</div>
+
+<div class="stat">
+<strong>300+</strong>
+<span>Apartment bookings handled</span>
+</div>
+
+<div class="stat">
+<strong>1,000+</strong>
+<span>Goods movements coordinated</span>
+</div>
+
+<div class="stat">
+<strong>₦10M+</strong>
+<span>Reported monthly sales value achieved at Greenbliss</span>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+<div class="container">
+
+<div class="section-title reveal">
+<small>PROFESSIONAL EXPERTISE</small>
+<h2>Skills That Create Business Value</h2>
+<p>
+A practical combination of sales, customer relationship, communication and operational skills.
+</p>
+</div>
+
+<div class="skills reveal">
+
+<span class="skill">Prospecting</span>
+<span class="skill">Lead Generation</span>
+<span class="skill">Inbound Calling</span>
+<span class="skill">Outbound Calling</span>
+<span class="skill">Lead Qualification</span>
+<span class="skill">Appointment Setting</span>
+<span class="skill">Discovery & Needs Assessment</span>
+<span class="skill">Objection Handling</span>
+<span class="skill">Sales Follow-up</span>
+<span class="skill">CRM Management</span>
+<span class="skill">Pipeline Management</span>
+<span class="skill">Customer Relationship Management</span>
+<span class="skill">Cold Outreach</span>
+<span class="skill">Email Outreach</span>
+<span class="skill">Chat Support</span>
+<span class="skill">Sales Support</span>
+<span class="skill">Consultative Selling</span>
+<span class="skill">Target Achievement</span>
+<span class="skill">Activity Tracking</span>
+<span class="skill">Active Listening</span>
+<span class="skill">Customer Communication</span>
+<span class="skill">Operational Coordination</span>
+
+</div>
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+
+<section id="experience">
+<div class="container">
+
+<div class="section-title reveal">
+<small>CAREER JOURNEY</small>
+<h2>Professional Experience</h2>
+<p>
+Practical experience, responsibilities and contributions across different business environments.
+</p>
+</div>
+
+<div class="timeline">
+
+<div class="job reveal">
+<time>2025 – August 2026</time>
+<h3>Sales Development Supervisor</h3>
+<div class="company">Eversearch Flame Ventures | Lagos, Nigeria</div>
+
+<ul>
+<li>Managed 200+ inbound and outbound calls daily, engaging prospective buyers and qualifying leads for senior sales managers.</li>
+<li>Set appointments and booked discovery meetings, supporting the movement of prospects into qualified opportunities.</li>
+<li>Coordinated daily operations involving 1,000+ goods moving in and out of the business.</li>
+<li>Maintained accurate operational records and follow-up.</li>
+<li>Supervised team activities and communicated expectations to ensure tasks were completed against company goals.</li>
+<li>Coordinated deliveries and resolved operational issues through communication with relevant stakeholders.</li>
+</ul>
+</div>
+
+<div class="job reveal">
+<time>May 2023 – October 2023</time>
+<h3>Sales Development Representative</h3>
+<div class="company">Lush Hair Limited | Surulere, Lagos, Nigeria</div>
+
+<ul>
+<li>Promoted and sold products and services to existing and prospective customers.</li>
+<li>Built and maintained positive customer relationships supporting repeat business and customer retention.</li>
+<li>Generated leads, conducted cold calls and followed up with prospects.</li>
+<li>Identified customer needs and communicated product value.</li>
+<li>Provided management with feedback on customer needs, interests and competitive activities.</li>
+<li>Set appointments and booked meetings for senior sales managers.</li>
+</ul>
+</div>
+
+<div class="job reveal">
+<time>August 2021 – April 2023</time>
+<h3>Sales Development Representative & Customer Service</h3>
+<div class="company">Greenbliss | Lagos, Nigeria</div>
+
+<ul>
+<li>Managed 150+ inbound and outbound calls and 50+ daily customer conversations across WhatsApp and social channels.</li>
+<li>Handled 300+ apartment bookings and guided prospects from initial enquiry through confirmed booking.</li>
+<li>Used active listening and needs-based questions to understand budgets, locations, apartment preferences and customer concerns.</li>
+<li>Followed up with interested prospects through calls and messaging.</li>
+<li>Achieved 10+ sales targets through consistent prospect engagement and relationship building.</li>
+<li>Surpassed monthly sales targets by consistently closing deals worth over ₦10,000,000.</li>
+<li>Closed a third-party short-let apartment partnership.</li>
+<li>Handled customer objections calmly and communicated next steps professionally.</li>
+</ul>
+</div>
+
+<div class="job reveal">
+<time>2018 – 2019</time>
+<h3>Sales Development Representative</h3>
+<div class="company">Paycom Nigeria Limited (OPay) | Alausa, Ikeja, Lagos</div>
+
+<ul>
+<li>Managed 200+ inbound customer communications through calls, email, chat and social media.</li>
+<li>Guided clients through onboarding and implementation.</li>
+<li>Provided guidance on product and service usage.</li>
+<li>Documented customer interactions in CRM systems to improve follow-up and relationship management.</li>
+<li>Represented the brand professionally while identifying and prioritising customer needs.</li>
+</ul>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+<div class="container">
+
+<div class="section-title reveal">
+<small>SELECTED WORK</small>
+<h2>Practical Experience & Projects</h2>
+<p>
+Examples of how I apply my professional knowledge to customer engagement, sales operations and customer support.
+</p>
+</div>
+
+<div class="project-grid">
+
+<div class="card project reveal">
+<small>SALES OPERATIONS</small>
+<h3>Lead Generation & Appointment Setting</h3>
+<p>
+Engaging prospective customers, identifying opportunities, qualifying leads, conducting follow-ups and scheduling discovery meetings for senior sales managers.
+</p>
+<p><b>Skills:</b> Prospecting, communication, qualification and appointment setting.</p>
+</div>
+
+<div class="card project reveal">
+<small>CUSTOMER EXPERIENCE</small>
+<h3>Customer Enquiry-to-Booking Support</h3>
+<p>
+Supporting customers throughout their short-let apartment search, understanding their requirements, recommending suitable options and guiding them through confirmed bookings.
+</p>
+<p><b>Skills:</b> Active listening, customer service, objection handling and relationship management.</p>
+</div>
+
+<div class="card project reveal">
+<small>TECHNOLOGY LEARNING</small>
+<h3>Freshdesk & Customer Support</h3>
+<p>
+A practical customer-support learning showcase shared through LinkedIn, demonstrating interest in customer service tools and structured support workflows.
+</p>
+<a href="https://www.linkedin.com/posts/itunu-egbowon-280836227_freshdesk-customersupport-customerservice-activity-7504201371655655424-jezy" target="_blank" rel="noopener" class="btn btn-teal">
+View LinkedIn Project
+</a>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- EDUCATION -->
+
+<section id="education">
+<div class="container">
+
+<div class="section-title reveal">
+<small>ACADEMIC BACKGROUND</small>
+<h2>Education & Professional Development</h2>
+</div>
+
+<div class="education-grid">
+
+<div class="card reveal">
+<h3>Higher National Diploma (HND)</h3>
+<p><b>Environmental Health Technology</b></p>
+<p>Kwara State College of Health Technology, Offa.</p>
+</div>
+
+<div class="card reveal">
+<h3>Freshdesk & Customer Support Learning</h3>
+<p>
+Customer-support learning showcase and professional development shared through LinkedIn.
+</p>
+<p>
+A formal technology certificate title and issuing organisation have not yet been provided for verification.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+<div class="container">
+
+<div class="contact-box reveal">
+
+<h2>Let's Create Meaningful Business Impact Together.</h2>
+
+<p>
+I welcome conversations with CEOs, founders, recruiters and organisations seeking a committed professional in sales development, business development, customer service, customer support and CRM-focused operations.
+
+I would appreciate the opportunity to discuss how my experience and professional approach can contribute to your organisation.
+</p>
+
+<div class="contact-links">
+
+<a class="btn btn-gold" href="mailto:Itunublessing.egbowon@gmail.com?subject=Interview%20Opportunity">
+Send an Email
+</a>
+
+<a class="btn btn-outline" href="tel:+2349064273560">
+Call Itunu
+</a>
+
+<a class="btn btn-outline" href="https://www.linkedin.com/in/itunu-egbowon-280836227/" target="_blank" rel="noopener">
+LinkedIn Profile
+</a>
+
+</div>
+
+</div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<p>© <span id="year"></span> Itunu Blessing Egbowon. All Rights Reserved.</p>
+<p>Lagos, Nigeria | Professional Portfolio</p>
+</footer>
+
+<a href="#home" class="back-home">↑ Back to Home</a>
+
+<!-- AUTOMATED PORTFOLIO ASSISTANT -->
+
+<div class="assistant">
+
+<button class="chat-button" id="chatToggle">
+Ask About Itunu
+</button>
+
+<div class="chat-box" id="chatBox">
+
+<div class="chat-header">
+Meet Itunu's Portfolio Assistant
+</div>
+
+<div class="chat-content">
+
+<p class="chat-reply" id="chatReply">
+Welcome! I can help you learn about Itunu's professional experience, skills, qualifications and career interests. What would you like to know?
+</p>
+
+<div class="chat-options">
+
+<button data-question="experience">What professional experience does she have?</button>
+
+<button data-question="skills">What are her strongest skills?</button>
+
+<button data-question="education">What is her educational qualification?</button>
+
+<button data-question="projects">What projects has she worked on?</button>
+
+<button data-question="opportunity">What roles is she interested in?</button>
+
+<button data-question="contact">How can I contact her?</button>
+
+<button data-question="cv">Can I download her CV and cover letter?</button>
+
+</div>
+</div>
+</div>
+</div>
+
+<!-- PRINTABLE CV -->
+
+<div id="printCV" class="print-document">
+
+<h1>ITUNU BLESSING EGBOWON</h1>
+
+<p>
+SALES DEVELOPMENT | CUSTOMER EXPERIENCE | CUSTOMER SERVICE
+<br>
+Lagos, Nigeria | +234 906 427 3560
+<br>
+Itunublessing.egbowon@gmail.com
+<br>
+LinkedIn: linkedin.com/in/itunu-egbowon-280836227
+</p>
+
+<h2>PROFESSIONAL PROFILE</h2>
+
+<p>
+Sales development and customer service professional with experience in sales supervision, lead generation, customer engagement, appointment setting, short-let bookings and operational coordination. Experienced in high-volume customer communications, identifying customer needs, qualifying prospects, handling objections and supporting customers through purchasing decisions. Brings strong communication, active listening, organisation and a customer-focused approach.
+</p>
+
+<h2>CORE SKILLS</h2>
+
+<p>
+Prospecting and Lead Generation; Inbound and Outbound Calling; Lead Qualification; Appointment Setting; Discovery and Needs Assessment; Objection Handling; Sales Follow-up; CRM and Pipeline Management; Customer Relationship Management; Cold Outreach; Email and Chat Outreach; Sales Support; Consultative Selling; Target Achievement; Activity Tracking; Active Listening; Operational Coordination.
+</p>
+
+<h2>PROFESSIONAL EXPERIENCE</h2>
+
+<h3>Sales Development Supervisor | Eversearch Flame Ventures</h3>
+<p>2025 – August 2026 | Lagos, Nigeria</p>
+<ul>
+<li>Managed 200+ inbound and outbound calls daily.</li>
+<li>Qualified prospective buyers and booked discovery meetings.</li>
+<li>Coordinated operations involving 1,000+ goods moving in and out of the business.</li>
+<li>Supervised team activities and coordinated deliveries.</li>
+</ul>
+
+<h3>Sales Development Representative | Lush Hair Limited</h3>
+<p>May 2023 – October 2023 | Surulere, Lagos</p>
+<ul>
+<li>Promoted products and services to prospective and existing customers.</li>
+<li>Generated leads, conducted cold calls and maintained customer relationships.</li>
+<li>Identified customer needs and supported purchasing decisions.</li>
+</ul>
+
+<h3>Sales Development Representative & Customer Service | Greenbliss</h3>
+<p>August 2021 – April 2023 | Lagos</p>
+<ul>
+<li>Managed 150+ calls and 50+ daily customer conversations.</li>
+<li>Handled 300+ apartment bookings.</li>
+<li>Achieved 10+ sales targets.</li>
+<li>Reported monthly deals exceeding ₦10,000,000.</li>
+<li>Closed a third-party short-let apartment partnership.</li>
+</ul>
+
+<h3>Sales Development Representative | Paycom Nigeria Limited (OPay)</h3>
+<p>2018 – 2019 | Alausa, Ikeja, Lagos</p>
+<ul>
+<li>Managed 200+ inbound customer communications.</li>
+<li>Supported client onboarding and product implementation.</li>
+<li>Documented customer interactions in CRM systems.</li>
+</ul>
+
+<h2>EDUCATION</h2>
+<p>
+<b>Higher National Diploma (HND) in Environmental Health Technology</b>
+<br>
+Kwara State College of Health Technology, Offa.
+</p>
+
+<h2>PROFESSIONAL DEVELOPMENT</h2>
+<p>
+Freshdesk and customer-support learning showcase shared through LinkedIn.
+</p>
+
+</div>
+
+<!-- PRINTABLE COVER LETTER -->
+
+<div id="printLetter" class="print-document">
+
+<h1>ITUNU BLESSING EGBOWON</h1>
+
+<p>
+Lagos, Nigeria
+<br>
++234 906 427 3560
+<br>
+Itunublessing.egbowon@gmail.com
+<br>
+LinkedIn: linkedin.com/in/itunu-egbowon-280836227
+</p>
+
+<br>
+
+<p>Dear Hiring Manager,</p>
+
+<br>
+
+<p>
+I am writing to express my interest in joining your organisation in a role where customer relationships, sales development, communication and business growth are valued.
+</p>
+
+<p>
+My professional experience across Eversearch Flame Ventures, Lush Hair Limited, Greenbliss and Paycom Nigeria Limited (OPay) has given me practical exposure to sales development, customer service, lead generation, appointment setting, customer engagement and operational coordination.
+</p>
+
+<p>
+Throughout my career, I have learned that successful business relationships are built on more than transactions. They are built on trust, understanding, consistency and the willingness to listen. I have handled high volumes of customer calls and conversations, supported more than 300 apartment bookings, qualified prospective customers and helped sales teams maintain meaningful engagement with potential clients.
+</p>
+
+<p>
+I bring practical skills in prospecting, lead qualification, CRM and pipeline management, objection handling, customer relationship management, appointment setting and sales follow-up. I approach responsibilities with professionalism, accountability, empathy and a commitment to delivering a positive customer experience.
+</p>
+
+<p>
+I also hold a Higher National Diploma in Environmental Health Technology from Kwara State College of Health Technology, Offa. I remain interested in expanding my professional knowledge, particularly in customer-support technology and modern business operations.
+</p>
+
+<p>
+I would be grateful for the opportunity to discuss how my experience, skills and professional approach could contribute to your organisation. I welcome the opportunity to attend an interview and explain how I can support your business objectives.
+</p>
+
+<p>
+Thank you for your time and consideration.
+</p>
+
+<br>
+
+<p>Yours sincerely,</p>
+
+<p><b>Itunu Blessing Egbowon</b></p>
+
+</div>
+
+<script>
+
+/* CURRENT YEAR */
+
+document.getElementById("year").textContent =
+new Date().getFullYear();
+
+
+/* AUTOMATED PORTFOLIO ASSISTANT */
+
+const chatToggle = document.getElementById("chatToggle");
+const chatBox = document.getElementById("chatBox");
+
+chatToggle.addEventListener("click", function() {
+ chatBox.classList.toggle("open");
+});
+
+const answers = {
+
+experience:
+"Itunu has professional experience with Eversearch Flame Ventures, Lush Hair Limited, Greenbliss and Paycom Nigeria Limited (OPay). Her experience includes sales supervision, lead generation, customer service, appointment setting, short-let bookings, operational coordination and customer relationship management.",
+
+skills:
+"Her skills include prospecting, lead generation, inbound and outbound calling, lead qualification, appointment setting, CRM and pipeline management, objection handling, sales follow-up, customer relationship management, email and chat outreach, active listening and consultative selling.",
+
+education:
+"Itunu holds a Higher National Diploma (HND) in Environmental Health Technology from Kwara State College of Health Technology, Offa.",
+
+projects:
+"Her practical experience highlights include lead generation and appointment setting, customer enquiry-to-booking support and Freshdesk/customer-support learning. You can also explore her Freshdesk LinkedIn post in the Projects section.",
+
+opportunity:
+"Itunu is interested in Sales Development, Business Development, Customer Service, Customer Support, Sales Operations and CRM-focused opportunities.",
+
+contact:
+"You can contact Itunu through Itunublessing.egbowon@gmail.com or +234 906 427 3560. You can also connect with her through LinkedIn.",
+
+cv:
+"Use the Download Professional CV PDF and Download Cover Letter PDF buttons at the top of the website. They open print-ready documents that you can save as PDF."
+};
+
+document.querySelectorAll("[data-question]").forEach(button => {
+
+ button.addEventListener("click", function() {
+
+  const question = this.dataset.question;
+
+  document.getElementById("chatReply").textContent =
+  answers[question];
+
+ });
+
+});
+
+
+/* SLOW SCROLL REVEAL AUTOMATION */
+
+const observer = new IntersectionObserver(entries => {
+
+ entries.forEach(entry => {
+
+  if(entry.isIntersecting) {
+
+   entry.target.classList.add("visible");
+
+   observer.unobserve(entry.target);
+
+  }
+
+ });
+
+}, {threshold:0.12});
+
+document.querySelectorAll(".reveal").forEach(element => {
+ observer.observe(element);
+});
+
+
+/* CV AND COVER LETTER PDF PRINTING */
+
+function printDocument(type) {
+
+ document.body.classList.remove("print-cv","print-letter");
+
+ document.body.classList.add(
+  type === "cv" ? "print-cv" : "print-letter"
+ );
+
+ window.print();
+
+}
+
+window.addEventListener("afterprint", function() {
+
+ document.body.classList.remove("print-cv","print-letter");
+
+});
+
+</script>
+
+</body>
+</html>
